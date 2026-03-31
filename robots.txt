@@ -1,0 +1,10 @@
+User-agent: *
+Sitemap: https://diskgasdecozinha.com.br/sitemap.xml
+Allow: /
+
+# Block sensitive directories
+Disallow: /admin/
+Disallow: /.git/
+Disallow: /.github/
+Disallow: /src/
+Disallow: /node_modules/
