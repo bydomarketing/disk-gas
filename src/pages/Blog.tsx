@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { MapPin, Phone, Facebook, Instagram } from 'lucide-react';
 import { articles } from '../data/articles';
 import BlogCard from '../components/BlogCard';
+import SEO from '../components/SEO';
 
 const WHATSAPP_LINK = "https://wa.me/5511950760161?text=Olá! Gostaria de pedir um gás.";
 const FACEBOOK_LINK = "https://www.facebook.com/people/Diskgasdecozinha-Nacional-Gas/pfbid02bsYJLPtzkMEMzaFkqp6xwSZgmFUQ375U2A6xTddvtrGiWu3PR2ffbLRejwnRUhnEl/";
@@ -16,6 +17,11 @@ export default function Blog() {
 
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col pt-24">
+      <SEO 
+        title="Blog - Dicas sobre Gás e Água em Ribeirão Pires" 
+        description="Acompanhe as dicas e novidades da Nacional Gás Ribeirão Pires no nosso blog."
+        canonical="/blog"
+      />
       <main className="flex-1">
         {/* Hero Section do Blog */}
         <section className="bg-white py-16 md:py-24 border-b border-slate-100">
@@ -56,52 +62,86 @@ export default function Blog() {
         </section>
       </main>
 
-      {/* Footer minimalista para o Blog */}
-      <footer className="bg-nacional-blue text-white pt-16 pb-8 px-4 relative overflow-hidden mt-auto">
+      <footer id="contato" className="bg-nacional-blue text-white pt-20 pb-10 px-4 relative overflow-hidden">
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-nacional-red/10 rounded-full blur-3xl -mb-48 -mr-48"></div>
+        
         <div className="max-w-5xl mx-auto relative z-10">
-          <div className="grid md:grid-cols-3 gap-12 mb-12">
-            <div className="space-y-4">
+          <div className="grid md:grid-cols-3 gap-16 mb-16">
+            <div className="space-y-6">
               <img 
                 src="https://res.cloudinary.com/dplhygs4v/image/upload/v1773838165/nacional-gas_chuksa.svg" 
                 alt="Nacional Gás Logo" 
-                className="h-12 w-auto brightness-0 invert opacity-90"
+                className="h-20 w-auto"
                 referrerPolicy="no-referrer"
               />
-              <p className="text-white/60 font-medium text-sm">
-                Sua revenda autorizada de confiança em Ribeirão Pires.
+              <p className="text-white/60 leading-relaxed font-medium text-lg">
+                Sua revenda autorizada de confiança. Compromisso com a segurança da sua família e a agilidade no seu dia a dia.
               </p>
+              <div className="flex gap-4">
+                <motion.a 
+                  href={FACEBOOK_LINK}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ y: -5 }} 
+                  className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center cursor-pointer hover:bg-white/20 transition-colors"
+                >
+                  <Facebook className="w-5 h-5" />
+                </motion.a>
+                <motion.a 
+                  href={INSTAGRAM_LINK}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ y: -5 }} 
+                  className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center cursor-pointer hover:bg-white/20 transition-colors"
+                >
+                  <Instagram className="w-5 h-5" />
+                </motion.a>
+              </div>
             </div>
+
             <div>
-              <h4 className="font-black text-white mb-6 uppercase tracking-widest text-sm border-l-4 border-nacional-red pl-4">Contato</h4>
-              <ul className="space-y-4">
-                <li>
-                  <a href={WHATSAPP_LINK} className="flex items-center gap-3 text-white/80 hover:text-white transition-colors">
-                    <Phone className="w-4 h-4 text-nacional-red" />
-                    <span className="font-medium text-sm">(11) 95076-0161</span>
+              <h4 className="font-black text-white mb-8 uppercase tracking-widest text-sm border-l-4 border-nacional-red pl-4">Onde Estamos</h4>
+              <ul className="space-y-6">
+                <li className="flex gap-4 group cursor-pointer">
+                  <a 
+                    href={GOOGLE_MAPS_LINK}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex gap-4"
+                  >
+                    <div className="w-10 h-10 bg-nacional-red rounded-xl flex items-center justify-center shrink-0 shadow-lg group-hover:scale-110 transition-transform">
+                      <MapPin className="w-5 h-5" />
+                    </div>
+                    <span className="text-white/80 font-medium leading-tight">R. Prof. Antônio Nunes, 484 - Santa Luzia<br/>Ribeirão Pires - SP, 09430-380</span>
                   </a>
                 </li>
-                <li>
-                  <a href={GOOGLE_MAPS_LINK} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-white/80 hover:text-white transition-colors">
-                    <MapPin className="w-4 h-4 text-nacional-red" />
-                    <span className="font-medium text-sm">Santa Luzia, Ribeirão Pires — SP</span>
+                <li className="flex gap-4 group cursor-pointer">
+                  <a href={WHATSAPP_LINK} className="flex gap-4">
+                    <div className="w-10 h-10 bg-green-500 rounded-xl flex items-center justify-center shrink-0 shadow-lg group-hover:scale-110 transition-transform">
+                      <Phone className="w-5 h-5" />
+                    </div>
+                    <span className="text-white/80 font-medium text-lg">(11) 95076-0161</span>
                   </a>
                 </li>
               </ul>
             </div>
+
             <div>
-              <h4 className="font-black text-white mb-6 uppercase tracking-widest text-sm border-l-4 border-nacional-red pl-4">Redes Sociais</h4>
-              <div className="flex gap-4">
-                <a href={FACEBOOK_LINK} target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition-colors">
-                  <Facebook className="w-4 h-4" />
-                </a>
-                <a href={INSTAGRAM_LINK} target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition-colors">
-                  <Instagram className="w-4 h-4" />
-                </a>
-              </div>
+              <h4 className="font-black text-white mb-8 uppercase tracking-widest text-sm border-l-4 border-nacional-red pl-4">Atendimento</h4>
+              <ul className="space-y-4">
+                <li className="bg-white/5 p-4 rounded-2xl border border-white/10 flex justify-between items-center">
+                  <span className="text-white/60 font-bold uppercase text-xs tracking-widest">Seg — Sáb</span>
+                  <span className="font-black text-lg">08h às 20h</span>
+                </li>
+                <li className="bg-white/5 p-4 rounded-2xl border border-white/10 flex justify-between items-center">
+                  <span className="text-white/60 font-bold uppercase text-xs tracking-widest">Dom — Fer</span>
+                  <span className="font-black text-lg">08h às 14h</span>
+                </li>
+              </ul>
             </div>
           </div>
-          <div className="pt-8 border-t border-white/10 text-center text-white/40 text-[10px] font-bold uppercase tracking-widest">
+
+          <div className="pt-10 border-t border-white/10 flex flex-col items-center gap-6 text-white/40 text-[10px] md:text-xs font-bold uppercase tracking-widest text-center">
             <p>Todos os direitos reservados Nacional Gás Ribeirão Pires © 2026. Desenvolvido por <a href="https://bydomarketing.com.br/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Bydo Marketing</a>.</p>
           </div>
         </div>

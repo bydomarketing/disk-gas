@@ -11,6 +11,8 @@ const FACEBOOK_LINK = "https://www.facebook.com/people/Diskgasdecozinha-Nacional
 const INSTAGRAM_LINK = "https://www.instagram.com/diskgasdecozinha.nacionalgas/";
 const GOOGLE_MAPS_LINK = "https://www.google.com/maps?sca_esv=4ae20d8bd47daad1&output=search&q=nacional+gas+em+santa+luzia+ribeirao+pires&source=lnms&fbs=ADc_l-acAb_3MMOAUx0zmbUpgBqRuweMR6bfOpj9a0gCa_xFt1zigmJhliJsoTZAqvO7YjNqvECqJyHcucT6SvCRq4iI2pblmVi1tfZ4EA_MceO-AEmXmajTtib7OosMAtVl1m1iaqRZvDymqiM12_XulMnMgNEBXrh38-3R9AwSTWxRw7J40Ijk3tH1ExEXGBF5G8j8fiW9ZGz-Gt9dZQxNhTbL8XLpzA&entry=mc&ved=1t:200715&ictx=111";
 
+import SEO from '../components/SEO';
+
 export default function ArticleDetail() {
   const { slug } = useParams<{ slug: string }>();
   const article = articles.find(a => a.slug === slug);
@@ -25,6 +27,12 @@ export default function ArticleDetail() {
 
   return (
     <div className="min-h-screen bg-white flex flex-col pt-24">
+      <SEO 
+        title={`${article.title} - Nacional Gás`} 
+        description={article.excerpt || `Leia sobre ${article.title} no blog da Nacional Gás.`}
+        canonical={`/blog/${slug}`}
+        type="article"
+      />
       <main className="flex-1 pb-20">
         {/* Header do Artigo */}
         <section className="py-12 md:py-16 px-4">
@@ -181,7 +189,7 @@ export default function ArticleDetail() {
                 <li>
                   <a href={GOOGLE_MAPS_LINK} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-white/80 hover:text-white transition-colors">
                     <MapPin className="w-4 h-4 text-nacional-red" />
-                    <span className="font-medium text-sm">Santa Luzia, Ribeirão Pires — SP</span>
+                    <span className="font-medium text-sm leading-tight">R. Prof. Antônio Nunes, 484 - Santa Luzia<br/>Ribeirão Pires - SP, 09430-380</span>
                   </a>
                 </li>
               </ul>

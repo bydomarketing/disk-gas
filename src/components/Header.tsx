@@ -19,96 +19,59 @@ export default function Header() {
   }, []);
 
   const navLinks = [
-    { label: 'HOME', href: '/#inicio' },
-    { label: 'Sobre Nós', href: '/#sobre' },
-    { label: 'Diferenciais', href: '/#diferenciais' },
-    { label: 'Nossos Produtos', href: '/#produtos' },
-    { label: 'Contato', href: '/#contato' },
+    { label: 'HOME', href: '/' },
+    { label: 'Sobre Nós', href: '/sobre-nos' },
+    { label: 'Gás de Cozinha Ribeirão Pires', href: '/gas-de-cozinha-ribeirao-pires' },
+    { label: 'Gás de Cozinha Mauá', href: '/gas-de-cozinha-maua' },
+    { label: 'Água Mineral', href: '/agua-mineral-ribeirao-pires' },
+    { label: 'Gás do Povo', href: '/gas-do-povo-ribeirao-pires' },
+    { label: 'Blog', href: '/blog' },
   ];
-
-  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    setIsMobileMenuOpen(false);
-    
-    // If we are already on the home page and it's a hash link, handle smooth scroll manually
-    if (location.pathname === '/' && href.startsWith('/#')) {
-      e.preventDefault();
-      const id = href.substring(2);
-      const element = document.getElementById(id);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
-  };
 
   return (
     <>
       <nav 
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled 
-            ? 'bg-white/95 backdrop-blur-md shadow-sm py-2' 
-            : 'bg-transparent py-4'
+            ? 'bg-white/95 backdrop-blur-md shadow-sm py-1.5' 
+            : 'bg-transparent py-3'
         }`}
       >
         <div className="max-w-[1400px] mx-auto px-4 flex items-center justify-between">
-          <Link to="/#inicio" className="flex items-center gap-3 z-50" onClick={(e) => handleLinkClick(e, '/#inicio')}>
+          <Link to="/" className="flex items-center gap-3 z-50">
             <img 
               src="https://res.cloudinary.com/dplhygs4v/image/upload/v1773838165/nacional-gas_chuksa.svg" 
               alt="Nacional Gás Logo" 
-              className={`transition-all duration-300 w-auto ${isScrolled ? 'h-8 md:h-10' : 'h-10 md:h-12'}`}
+              className={`transition-all duration-300 w-auto ${isScrolled ? 'h-6 md:h-8' : 'h-8 md:h-10'}`}
               referrerPolicy="no-referrer"
             />
           </Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-4 lg:gap-8">
-            <ul className="flex items-center gap-4 lg:gap-6">
+            <ul className="flex items-center gap-3 lg:gap-6">
               {navLinks.map((link, index) => (
                 <li key={index}>
-                  <a 
-                    href={link.href}
-                    onClick={(e) => handleLinkClick(e, link.href)}
-                    className={`text-xs font-bold transition-colors hover:text-nacional-red uppercase tracking-wide whitespace-nowrap ${
-                      isScrolled || location.pathname !== '/' ? 'text-slate-700' : 'text-white drop-shadow-md hover:text-white/80'
+                  <Link 
+                    to={link.href}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className={`text-xs font-semibold transition-colors hover:text-nacional-red uppercase tracking-wide whitespace-nowrap ${
+                      location.pathname === link.href
+                        ? 'text-nacional-red'
+                        : isScrolled || location.pathname !== '/' 
+                          ? 'text-slate-700' 
+                          : 'text-white drop-shadow-md hover:text-white/80'
                     }`}
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
-              <li>
-                <Link
-                  to="/blog"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className={`text-xs font-black transition-colors uppercase tracking-wide whitespace-nowrap ${
-                    location.pathname.startsWith('/blog') 
-                      ? 'text-nacional-red' 
-                      : isScrolled || location.pathname !== '/' 
-                        ? 'text-slate-700 hover:text-nacional-red' 
-                        : 'text-white drop-shadow-md hover:text-white/80'
-                  }`}
-                >
-                  Blog
-                </Link>
-              </li>
             </ul>
-
-            <a 
-              href={WHATSAPP_LINK}
-              className="bg-green-600 hover:bg-green-700 text-white px-3 py-3 rounded-2xl flex flex-col items-center justify-center transition-all shadow-xl active:translate-y-1 group min-w-[80px]"
-            >
-              <MessageCircle className="w-5 h-5 md:w-6 md:h-6 group-hover:scale-110 transition-transform" />
-              <span className="text-[8px] md:text-[10px] font-black uppercase tracking-tighter mt-1 whitespace-nowrap">PEDIR AGORA</span>
-            </a>
           </div>
 
           {/* Mobile Menu Toggle */}
           <div className="md:hidden flex items-center gap-4 z-50">
-            <a 
-              href={WHATSAPP_LINK}
-              className="bg-nacional-red text-white p-2 rounded-full shadow-lg"
-            >
-              <MessageCircle className="w-5 h-5" />
-            </a>
             <button 
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className={`p-2 rounded-lg transition-colors ${
@@ -133,26 +96,17 @@ export default function Header() {
             <ul className="flex flex-col gap-6 items-center mt-8">
               {navLinks.map((link, index) => (
                 <li key={index} className="w-full border-b border-slate-100 pb-4 text-center">
-                  <a 
-                    href={link.href}
-                    onClick={(e) => handleLinkClick(e, link.href)}
-                    className="text-lg font-bold text-slate-800 uppercase tracking-wide block w-full"
+                  <Link 
+                    to={link.href}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className={`text-lg font-bold text-slate-800 uppercase tracking-wide block w-full ${
+                      location.pathname === link.href ? 'text-nacional-red' : ''
+                    }`}
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
-              <li className="w-full border-b border-slate-100 pb-4 text-center">
-                <Link
-                  to="/blog"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className={`text-lg font-black uppercase tracking-wide block w-full ${
-                    location.pathname.startsWith('/blog') ? 'text-nacional-red' : 'text-slate-800'
-                  }`}
-                >
-                  Blog
-                </Link>
-              </li>
             </ul>
             
             <div className="mt-auto pt-8 flex justify-center">
