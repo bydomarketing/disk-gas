@@ -12,6 +12,7 @@ const INSTAGRAM_LINK = "https://www.instagram.com/diskgasdecozinha.nacionalgas/"
 const GOOGLE_MAPS_LINK = "https://www.google.com/maps?sca_esv=4ae20d8bd47daad1&output=search&q=nacional+gas+em+santa+luzia+ribeirao+pires&source=lnms&fbs=ADc_l-acAb_3MMOAUx0zmbUpgBqRuweMR6bfOpj9a0gCa_xFt1zigmJhliJsoTZAqvO7YjNqvECqJyHcucT6SvCRq4iI2pblmVi1tfZ4EA_MceO-AEmXmajTtib7OosMAtVl1m1iaqRZvDymqiM12_XulMnMgNEBXrh38-3R9AwSTWxRw7J40Ijk3tH1ExEXGBF5G8j8fiW9ZGz-Gt9dZQxNhTbL8XLpzA&entry=mc&ved=1t:200715&ictx=111";
 
 import SEO from '../components/SEO';
+import { Helmet } from 'react-helmet-async';
 
 export default function ArticleDetail() {
   const { slug } = useParams<{ slug: string }>();
@@ -28,11 +29,38 @@ export default function ArticleDetail() {
   return (
     <div className="min-h-screen bg-white flex flex-col pt-24">
       <SEO 
-        title={`${article.title} - Nacional Gás`} 
-        description={article.excerpt || `Leia sobre ${article.title} no blog da Nacional Gás.`}
+        title={article.seoTitle || `${article.title} - Nacional Gás`} 
+        description={article.seoDescription || article.excerpt || `Leia sobre ${article.title} no blog da Nacional Gás.`}
         canonical={`/blog/${slug}`}
         type="article"
+        image={article.image}
       />
+      <Helmet>
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": article.title,
+          "description": article.excerpt,
+          "image": article.image,
+          "author": {
+            "@type": "Organization",
+            "name": "Nacional Gás Ribeirão Pires"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Nacional Gás Ribeirão Pires",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://res.cloudinary.com/dplhygs4v/image/upload/v1773838165/nacional-gas_chuksa.svg"
+            }
+          },
+          "url": `https://diskgasdecozinha.com.br/blog/${slug}`,
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": `https://diskgasdecozinha.com.br/blog/${slug}`
+          }
+        })}</script>
+      </Helmet>
       <main className="flex-1 pb-20">
         {/* Header do Artigo */}
         <section className="py-12 md:py-16 px-4">

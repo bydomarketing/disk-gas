@@ -51,17 +51,53 @@ async function prerender() {
     console.log(`Prerenderizando ${route}...`);
     const page = await browser.newPage();
     
-    // Ignorar requisições externas para ser mais rápido (Analytics, etc)
-    await page.setRequestInterception(true);
-    page.on('request', (req) => {
-      if (['image', 'stylesheet', 'font'].includes(req.resourceType())) {
-        req.continue();
-      } else {
-        req.continue();
-      }
-    });
-
     await page.goto(`http://localhost:3001${route}`, { waitUntil: 'networkidle0' });
+    
+    // Esperar React renderizar completamente e Helmet atualizar o head
+    await page.waitForSelector('meta[property="og:title"]', { timeout: 10000 }).catch(() => {});
+    await new Promise(r => setTimeout(r, 500));
+    
+    // Limpar tags duplicadas do head (index.html shell + Helmet)
+    await page.evaluate((currentPath) => {
+      const head = document.head;
+      
+      // Remover title duplicado - remover todos e recriar com o primeiro valor (Helmet)
+      const titles = head.querySelectorAll('title');
+      if (titles.length > 1) {
+        // Coletar todos os valores
+        const values = Array.from(titles).map(t => t.textContent);
+        // Remover todos
+        for (const t of titles) t.remove();
+        // Adicionar o primeiro valor (Helmet - inserido antes do shell)
+        const newTitle = document.createElement('title');
+        newTitle.textContent = values[0];
+        head.appendChild(newTitle);
+      }
+      
+      // Para cada tipo de meta tag, remover duplicatas mantendo a última
+      const metaTypes = ['description', 'og:title', 'og:description', 'og:url', 'og:type', 'og:image', 'og:site_name'];
+      metaTypes.forEach(name => {
+        const attr = name.startsWith('og:') ? 'property' : 'name';
+        const metas = head.querySelectorAll(`meta[${attr}="${name}"]`);
+        if (metas.length > 1) {
+          for (let i = 0; i < metas.length - 1; i++) {
+            metas[i].remove();
+          }
+        }
+      });
+      
+      // Remover canonical duplicado - manter o que contém a URL correta
+      const canonicals = head.querySelectorAll('link[rel="canonical"]');
+      if (canonicals.length > 1) {
+        for (const c of canonicals) {
+          if (c.href && c.href.includes(currentPath)) {
+            // Manter este, remover os outros
+          } else {
+            c.remove();
+          }
+        }
+      }
+    }, route);
     
     const html = await page.content();
     

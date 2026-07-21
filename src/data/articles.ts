@@ -5,6 +5,8 @@ export interface Article {
   excerpt: string;
   image: string;
   category: string;
+  seoTitle?: string;
+  seoDescription?: string;
   content: {
     type: 'text' | 'h2' | 'box';
     value: string;
@@ -20,6 +22,8 @@ export const articles: Article[] = [
     category: 'Água Mineral',
     excerpt: 'Garanta a hidratação da sua família com a Água Mineral Crystal. Pureza certificada e entrega imediata em Ribeirão Pires.',
     image: 'https://res.cloudinary.com/dixrsdfku/image/upload/v1779125096/ChatGPT_Image_13_de_mai._de_2026_19_22_26_irf3kk.png',
+    seoTitle: 'Água Mineral Crystal em Ribeirão Pires | Nac. Gás',
+    seoDescription: 'Água Mineral Crystal (Olímpica Crystal) com entrega rápida em Ribeirão Pires. Pureza certificada, galões lacrados e atendimento diário.',
     content: [
       {
         type: 'text',
@@ -87,6 +91,8 @@ export const articles: Article[] = [
     category: 'Água Mineral',
     excerpt: 'Conheça a Água Mineral K2O. Leveza, sabor neutro e qualidade premium com entrega rápida em toda Ribeirão Pires.',
     image: 'https://res.cloudinary.com/dixrsdfku/image/upload/v1779125245/K2O-familia-fontagua.png_z6g5an.webp',
+    seoTitle: 'Água Mineral K2O em Ribeirão Pires | Nac. Gás',
+    seoDescription: 'Água Mineral K2O com entrega rápida em Ribeirão Pires. Pureza premium, galões lacrados e atendimento todos os dias.',
     content: [
       {
         type: 'text',
@@ -150,6 +156,8 @@ export const articles: Article[] = [
     category: 'Serviços',
     excerpt: 'Procura água mineral e gás de cozinha em Ribeirão Pires? Encontre tudo em um só lugar com entrega rápida e segura.',
     image: 'https://res.cloudinary.com/dixrsdfku/image/upload/v1779125102/combo_pn8lye.svg',
+    seoTitle: 'Água e Gás em Ribeirão Pires | Nac. Gás',
+    seoDescription: 'Água mineral e gás de cozinha com entrega rápida em Ribeirão Pires. Tudo em um só lugar, atendimento diário.',
     content: [
       {
         type: 'text',
@@ -205,6 +213,8 @@ export const articles: Article[] = [
     category: 'Água Mineral',
     excerpt: 'Sem precisar sair de casa. Receba sua Água Mineral em Ribeirão Pires com entrega rápida, galões lacrados e atendimento todos os dias.',
     image: 'https://res.cloudinary.com/dixrsdfku/image/upload/v1779125100/gas_de_cozinha_ribeirao_pires1_fur9bg.svg',
+    seoTitle: 'Água Mineral com Entrega em Ribeirão Pires',
+    seoDescription: 'Entrega de água mineral em Ribeirão Pires para casa e empresa. Galões lacrados, atendimento rápido e todos os dias.',
     content: [
       {
         type: 'text',
@@ -264,6 +274,8 @@ export const articles: Article[] = [
     category: 'Segurança',
     excerpt: 'Entenda os riscos reais de virar o botijão de gás e como isso pode causar acidentes graves na sua cozinha.',
     image: 'https://res.cloudinary.com/dixrsdfku/image/upload/v1779127036/NACIONAL_GAS_Por_que_voc%C3%AA_NUNCA_deve_virar_o_seu_botij%C3%A3o_leekkm.png',
+    seoTitle: 'Segurança: Nunca Vire seu Botijão | Nac. Gás',
+    seoDescription: 'Entenda por que NUNCA deve virar o botijão de gás. Riscos de acidentes e dicas de segurança no uso do gás de cozinha.',
     content: [
       {
         type: 'text',
@@ -311,6 +323,8 @@ export const articles: Article[] = [
     category: 'Economia',
     excerpt: 'Aprenda uma receita deliciosa que fica pronta em 5 minutos e ajuda a reduzir o consumo de gás.',
     image: 'https://res.cloudinary.com/dixrsdfku/image/upload/v1779127376/e9e7016a-b7dc-4bbb-91ca-1b993a0d7a34_m6cz2q.png',
+    seoTitle: 'Receita Macarrão de Pressão | Nac. Gás',
+    seoDescription: 'Receita rápida de macarrão na panela de pressão para economizar gás. Pronta em 5 minutos, ideal para famílias.',
     content: [
       {
         type: 'text',
@@ -354,6 +368,8 @@ export const articles: Article[] = [
     category: 'Serviços',
     excerpt: 'Ficou sem gás na hora H? Conheça nosso sistema de entrega de plantão em Ribeirão Pires.',
     image: 'https://res.cloudinary.com/dixrsdfku/image/upload/v1779125103/gas_de_cozinha_ribeirao_pires4_m5yliz.svg',
+    seoTitle: 'Gás Acabou? Saiba o que Fazer | Nac. Gás',
+    seoDescription: 'Gás acabou no meio do almoço? Saiba o que fazer e como pedir entrega rápida de gás em Ribeirão Pires.',
     content: [
       {
         type: 'text',
@@ -393,6 +409,8 @@ export const articles: Article[] = [
     category: 'Segurança',
     excerpt: 'Descubra qual o melhor lugar para instalar seu botijão e os prazos de validade que você deve observar.',
     image: 'https://res.cloudinary.com/dplhygs4v/image/upload/v1773769617/gas_de_cozinha_ribeirao_pires5_opncma.svg',
+    seoTitle: 'Onde Instalar seu Botijão? | Nac. Gás',
+    seoDescription: 'Guia completo de onde instalar o botijão de gás de cozinha. Local correto, validade da mangueira e dicas de segurança.',
     content: [
       {
         type: 'text',

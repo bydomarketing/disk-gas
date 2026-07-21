@@ -6,10 +6,12 @@ interface SEOProps {
   description: string;
   canonical?: string;
   type?: string;
+  image?: string;
 }
 
-export default function SEO({ title, description, canonical, type = 'website' }: SEOProps) {
+export default function SEO({ title, description, canonical, type = 'website', image }: SEOProps) {
   const url = canonical ? `https://diskgasdecozinha.com.br${canonical}` : 'https://diskgasdecozinha.com.br';
+  const ogImage = image || 'https://res.cloudinary.com/dplhygs4v/image/upload/v1773838165/nacional-gas_chuksa.svg';
 
   return (
     <Helmet>
@@ -21,6 +23,8 @@ export default function SEO({ title, description, canonical, type = 'website' }:
       <meta property="og:description" content={description} />
       <meta property="og:url" content={url} />
       <meta property="og:type" content={type} />
+      <meta property="og:image" content={ogImage} />
+      <meta property="og:site_name" content="Nacional Gás Ribeirão Pires" />
     </Helmet>
   );
 }
