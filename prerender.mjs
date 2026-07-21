@@ -42,7 +42,10 @@ async function prerender() {
   const server = app.listen(3001);
   console.log('Servidor rodando na porta 3001 para prerender...');
 
-  const browser = await puppeteer.launch({ headless: 'new' });
+  const browser = await puppeteer.launch({
+    headless: 'new',
+    args: ['--no-sandbox', '--disable-setuid-sandbox']
+  });
   
   for (const route of routes) {
     console.log(`Prerenderizando ${route}...`);
