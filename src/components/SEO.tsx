@@ -10,7 +10,9 @@ interface SEOProps {
 }
 
 export default function SEO({ title, description, canonical, type = 'website', image }: SEOProps) {
-  const url = canonical ? `https://diskgasdecozinha.com.br${canonical}` : 'https://diskgasdecozinha.com.br';
+  const url = canonical
+    ? `https://diskgasdecozinha.com.br${canonical.endsWith('/') ? canonical : `${canonical}/`}`
+    : 'https://diskgasdecozinha.com.br/';
   const ogImage = image || 'https://res.cloudinary.com/dplhygs4v/image/upload/v1773838165/nacional-gas_chuksa.svg';
 
   return (

@@ -54,10 +54,10 @@ export default function ArticleDetail() {
               "url": "https://res.cloudinary.com/dplhygs4v/image/upload/v1773838165/nacional-gas_chuksa.svg"
             }
           },
-          "url": `https://diskgasdecozinha.com.br/blog/${slug}`,
+          "url": `https://diskgasdecozinha.com.br/blog/${slug}/`,
           "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": `https://diskgasdecozinha.com.br/blog/${slug}`
+            "@id": `https://diskgasdecozinha.com.br/blog/${slug}/`
           }
         })}</script>
       </Helmet>
