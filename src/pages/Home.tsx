@@ -160,17 +160,7 @@ export default function Home() {
       <Helmet>
         <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"LocalBusiness","name":"Nacional Gás Ribeirão Pires","description":"Revenda autorizada Nacional Gás em Ribeirão Pires. Entrega rápida de gás de cozinha e água mineral.","url":"https://diskgasdecozinha.com.br/","telephone":"+5511950760161","address":{"@type":"PostalAddress","streetAddress":"R. Prof. Antônio Nunes, 484","addressLocality":"Ribeirão Pires","addressRegion":"SP","postalCode":"09430-380","addressCountry":"BR"},"geo":{"@type":"GeoCoordinates","latitude":-23.7155556,"longitude":-46.4069444},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"08:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Sunday"],"opens":"08:00","closes":"14:00"}],"priceRange":"$$"}`}</script>
       </Helmet>
-      {/* Sticky Header for Mobile Conversion */}
-      <div className="fixed bottom-6 right-6 z-50 md:hidden">
-        <motion.a
-          href={WHATSAPP_LINK}
-          initial={{ scale: 0 }}
-          animate={{ scale: 1 }}
-          className="bg-green-500 text-white p-4 rounded-full shadow-2xl flex items-center justify-center ripple-effect"
-        >
-          <MessageCircle className="w-8 h-8" />
-        </motion.a>
-      </div>      {/* SEÇÃO 1: Hero - High Impact */}
+      {/* SEÇÃO 1: Hero - High Impact */}
       <section id="inicio" className="relative h-[100dvh] md:h-[850px] flex items-center md:items-start overflow-hidden pt-16 md:pt-28">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
