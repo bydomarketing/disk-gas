@@ -25,7 +25,8 @@ const routes = [
   '/blog/gas-de-cozinha-ribeirao-pires-seguranca',
   '/blog/receita-economica-gas-ribeirao-pires',
   '/blog/entrega-gas-de-cozinha-ribeirao-pires-plantao',
-  '/blog/cuidados-gas-de-cozinha-ribeirao-pires'
+  '/blog/cuidados-gas-de-cozinha-ribeirao-pires',
+  '/blog/gas-de-cozinha-em-ribeirao-pires-onde-pedir-e-receber-em-casa'
 ];
 
 async function prerender() {
