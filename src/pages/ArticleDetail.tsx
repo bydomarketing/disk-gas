@@ -104,12 +104,12 @@ export default function ArticleDetail() {
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2 }}
-              className="rounded-[2.5rem] md:rounded-[4rem] overflow-hidden shadow-2xl mb-16 md:mb-20 aspect-video"
+              className="rounded-[2.5rem] md:rounded-[4rem] overflow-hidden shadow-2xl mb-16 md:mb-20 bg-slate-100/60 flex items-center justify-center border border-slate-100"
             >
               <img 
                 src={article.image} 
                 alt={article.title} 
-                className="w-full h-full object-cover"
+                className="w-full h-auto max-h-[650px] object-contain"
               />
             </motion.div>
 

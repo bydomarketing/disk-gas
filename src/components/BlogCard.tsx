@@ -10,11 +10,11 @@ export default function BlogCard({ article }: { article: Article }) {
       whileHover={{ y: -5 }}
       className="bg-white rounded-[2rem] overflow-hidden shadow-sm border border-slate-100 flex flex-col h-full group"
     >
-      <Link to={`/blog/${article.slug}`} className="block overflow-hidden h-48 md:h-56">
+      <Link to={`/blog/${article.slug}`} className="block overflow-hidden h-48 md:h-56 bg-slate-50 flex items-center justify-center p-2">
         <img
           src={article.image}
           alt={article.title}
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+          className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
         />
       </Link>
       

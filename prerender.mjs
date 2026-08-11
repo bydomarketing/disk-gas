@@ -26,7 +26,12 @@ const routes = [
   '/blog/receita-economica-gas-ribeirao-pires',
   '/blog/entrega-gas-de-cozinha-ribeirao-pires-plantao',
   '/blog/cuidados-gas-de-cozinha-ribeirao-pires',
-  '/blog/gas-de-cozinha-em-ribeirao-pires-onde-pedir-e-receber-em-casa'
+  '/blog/gas-de-cozinha-em-ribeirao-pires-onde-pedir-e-receber-em-casa',
+  '/blog/quem-entrega-gas-de-cozinha-em-ribeirao-pires',
+  '/blog/como-pedir-gas-de-cozinha-pelo-whatsapp-em-ribeirao-pires',
+  '/blog/onde-comprar-agua-mineral-em-ribeirao-pires',
+  '/blog/quem-entrega-agua-mineral-em-ribeirao-pires-pelo-whatsapp',
+  '/blog/gas-do-povo-em-ribeirao-pires-como-funciona'
 ];
 
 async function prerender() {
