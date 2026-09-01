@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { 
-  MessageCircle, Truck, ShieldCheck, CheckCircle2, ChevronDown, 
+  MessageCircle, Motorbike, ShieldCheck, CheckCircle2, ChevronDown, 
   MapPin, Clock, Headset, Zap, Phone, ArrowRight, Star
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -56,7 +56,7 @@ export default function GasDeCozinhaMaua() {
         canonical="/gas-de-cozinha-maua"
       />
       <Helmet>
-        <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Vocês entregam em toda Mauá?","acceptedAnswer":{"@type":"Answer","text":"Sim. Atendemos todos os bairros de Mauá, incluindo Centro, Vila Assis Brasil, Vila Bocaina, Jardim Zaíra, Jardim Itapeva, Jardim Mauá, Parque São Vicente, Jardim Oratório, Parque das Américas, Vila Vitória e muito mais."}},{"@type":"Question","name":"Quanto tempo demora a entrega em Mauá?","acceptedAnswer":{"@type":"Answer","text":"A entrega é realizada entre 30 e 50 minutos após a confirmação do pedido, dependendo da localidade em Mauá."}},{"@type":"Question","name":"Como faço meu pedido de gás em Mauá?","acceptedAnswer":{"@type":"Answer","text":"Basta enviar uma mensagem pelo WhatsApp exclusivo de Mauá com seu endereço e a quantidade desejada. Em instantes confirmamos e saímos para a entrega."}},{"@type":"Question","name":"A empresa é revenda autorizada Nacional Gás?","acceptedAnswer":{"@type":"Answer","text":"Sim. Somos revenda oficial e autorizada da Nacional Gás, garantindo produto original, peso correto e botijões certificados em todas as entregas."}},{"@type":"Question","name":"Vocês entregam água mineral em Mauá?","acceptedAnswer":{"@type":"Answer","text":"Sim. Entregamos água mineral de 20 litros junto com o gás de cozinha, tudo no mesmo caminhão e com a mesma agilidade."}}]}`}</script>
+        <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Vocês entregam em toda Mauá?","acceptedAnswer":{"@type":"Answer","text":"Sim. Atendemos todos os bairros de Mauá, incluindo Centro, Vila Assis Brasil, Vila Bocaina, Jardim Zaíra, Jardim Itapeva, Jardim Mauá, Parque São Vicente, Jardim Oratório, Parque das Américas, Vila Vitória e muito mais."}},{"@type":"Question","name":"Quanto tempo demora a entrega em Mauá?","acceptedAnswer":{"@type":"Answer","text":"A entrega é realizada com agilidade após a confirmação do pedido, dependendo da localidade em Mauá."}},{"@type":"Question","name":"Como faço meu pedido de gás em Mauá?","acceptedAnswer":{"@type":"Answer","text":"Basta enviar uma mensagem pelo WhatsApp exclusivo de Mauá com seu endereço e a quantidade desejada. Confirmamos seu pedido pelo WhatsApp e seguimos com a entrega."}},{"@type":"Question","name":"A empresa é revenda autorizada Nacional Gás?","acceptedAnswer":{"@type":"Answer","text":"Sim. Somos revenda oficial e autorizada da Nacional Gás, garantindo produto original, peso correto e botijões certificados em todas as entregas."}},{"@type":"Question","name":"Vocês entregam água mineral em Mauá?","acceptedAnswer":{"@type":"Answer","text":"Sim! Entregamos água mineral de 20 litros e você pode pedir junto com o seu gás de cozinha pelo WhatsApp."}}]}`}</script>
       </Helmet>
 
       {/* HERO */}
@@ -124,7 +124,7 @@ export default function GasDeCozinhaMaua() {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
-            { icon: <Zap className="text-nacional-red" />, title: "Entrega rápida em Mauá", desc: "Do pedido à sua porta em até 50 minutos. Conhecemos os atalhos de Mauá para entregar com agilidade." },
+            { icon: <Zap className="text-nacional-red" />, title: "Entrega rápida em Mauá", desc: "Do pedido à sua porta com entrega rápida. Conhecemos os atalhos de Mauá para entregar com agilidade." },
             { icon: <ShieldCheck className="text-nacional-blue" />, title: "Revenda autorizada", desc: "Somos revenda oficial da Nacional Gás. Cada botijão é original, com lacre intacto e procedência garantida." },
             { icon: <CheckCircle2 className="text-green-500" />, title: "Procedência e segurança", desc: "Pesagem rigorosa antes de cada entrega. Você recebe exatamente o que pagou, sem surpresas." },
             { icon: <Headset className="text-nacional-red" />, title: "Atendimento exclusivo para Mauá", desc: "WhatsApp dedicado para clientes de Mauá. Fale direto com nossa equipe, sem robôs e sem espera." }
@@ -183,7 +183,7 @@ export default function GasDeCozinhaMaua() {
             <div className="space-y-6">
               {[
                 { step: "01", title: "Entre em contato", desc: "Envie uma mensagem pelo WhatsApp exclusivo de Mauá. Informe seu endereço e a quantidade de botijões." },
-                { step: "02", title: "Confirmação rápida", desc: "Nossa equipe confirma o pedido em instantes e informa o valor total. Sem surpresas, sem letreiro." },
+                { step: "02", title: "Confirmação rápida", desc: "Nossa equipe confirma o pedido e informa o valor total. Sem surpresas, sem letreiro." },
                 { step: "03", title: "Separamos seu pedido", desc: "Cada botijão é pesado e conferido antes de sair. Garantimos que tudo esteja correto antes da entrega." },
                 { step: "04", title: "Entrega no seu endereço", desc: "Nosso entregador leva o gás até a sua porta. Pagamento no ato, direto com o motoboy. Rápido e prático." }
               ].map((item, i) => (
@@ -241,7 +241,7 @@ export default function GasDeCozinhaMaua() {
                 Atendemos também o Jardim Zaíra, o Jardim Itapeva, o Jardim Mauá e o Parque São Vicente, regiões que já conhecemos bem e onde entregamos com frequência. Se você mora no Jardim Oratório, Parque das Américas ou na Vila Vitória, pode contar com a mesma rapidez e eficiência.
               </p>
               <p>
-                Conhecemos cada bairro, cada rua e os horários de maior movimento de Mauá. Isso permite planejar a rota mais eficiente e garantir que seu pedido chegue rápido — sem enrolação. Se precisa de gás de cozinha em Mauá com entrega no mesmo dia, basta chamar no WhatsApp.
+                Conhecemos cada bairro, cada rua e os horários de maior movimento de Mauá. Isso permite planejar a rota mais eficiente e garantir que seu pedido chegue rápido — sem enrolação. Se precisa de gás de cozinha em Mauá com entrega rápida, basta chamar no WhatsApp.
               </p>
             </motion.div>
 
@@ -350,7 +350,7 @@ export default function GasDeCozinhaMaua() {
               {[
                 { icon: <ShieldCheck className="w-5 h-5 text-nacional-blue" />, text: "Produto certificado" },
                 { icon: <CheckCircle2 className="w-5 h-5 text-green-500" />, text: "Peso conferido" },
-                { icon: <Truck className="w-5 h-5 text-nacional-red" />, text: "Entrega própria" },
+                { icon: <Motorbike className="w-5 h-5 text-nacional-red" />, text: "Entrega própria" },
                 { icon: <Headset className="w-5 h-5 text-nacional-blue" />, text: "WhatsApp exclusivo Mauá" }
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100">
@@ -388,11 +388,11 @@ export default function GasDeCozinhaMaua() {
               />
               <FAQItem 
                 question="Quanto tempo demora a entrega em Mauá?" 
-                answer="Nossa meta é entregar entre 30 e 50 minutos após a confirmação do pedido, dependendo da sua localidade em Mauá. Conhecemos a cidade bem o suficiente para escolher a rota mais rápida." 
+                answer="Entrega rápida na sua casa após a confirmação do pedido, dependendo da sua localidade em Mauá. Conhecemos a cidade bem o suficiente para escolher a rota mais rápida." 
               />
               <FAQItem 
                 question="Como faço meu pedido de gás?" 
-                answer="Basta enviar uma mensagem pelo WhatsApp exclusivo de Mauá, informando seu endereço, a quantidade de botijões e se deseja água mineral. Em instantes confirmamos e saímos para a entrega." 
+                answer="Basta enviar uma mensagem pelo WhatsApp exclusivo de Mauá, informando seu endereço, a quantidade de botijões e se deseja água mineral. Confirmamos seu pedido pelo WhatsApp e seguimos com a entrega." 
               />
               <FAQItem 
                 question="Posso pedir pelo WhatsApp?" 
@@ -412,7 +412,7 @@ export default function GasDeCozinhaMaua() {
               />
               <FAQItem 
                 question="Vocês entregam água mineral em Mauá?" 
-                answer="Sim. Entregamos água mineral de 20 litros junto com o gás de cozinha, tudo no mesmo caminhão e com a mesma rapidez. Basta solicitar no momento do pedido pelo WhatsApp." 
+                answer="Sim! Entregamos água mineral de 20 litros e você pode pedir junto com o seu gás de cozinha pelo WhatsApp." 
               />
             </div>
           </div>
@@ -432,7 +432,7 @@ export default function GasDeCozinhaMaua() {
               <span className="text-white text-2xl md:text-4xl block mt-4">A NACIONAL GÁS RESOLVE AGORA.</span>
             </h2>
             <p className="text-xl font-bold mb-10 opacity-90 leading-tight max-w-2xl mx-auto">
-              Não perca tempo. Peça pelo WhatsApp exclusivo de Mauá e receba em minutos. Entrega rápida, peso garantido e atendimento de verdade.
+              Não perca tempo. Peça pelo WhatsApp exclusivo de Mauá e receba com entrega rápida. Entrega rápida, peso garantido e atendimento de verdade.
             </p>
             <a 
               href={WHATSAPP_MAUA}
@@ -462,8 +462,8 @@ export default function GasDeCozinhaMaua() {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
-            { label: "Gás de Cozinha Ribeirão Pires", desc: "Entrega rápida de gás com loja própria em Ribeirão Pires.", href: "/gas-de-cozinha-ribeirao-pires", icon: <Truck className="w-6 h-6" /> },
-            { label: "Água Mineral", desc: "Água mineral de 20L das melhores marcas, entrega no mesmo caminhão.", href: "/agua-mineral-ribeirao-pires", icon: <CheckCircle2 className="w-6 h-6" /> },
+            { label: "Gás de Cozinha Ribeirão Pires", desc: "Entrega rápida de gás com loja própria em Ribeirão Pires.", href: "/gas-de-cozinha-ribeirao-pires", icon: <Motorbike className="w-6 h-6" /> },
+            { label: "Água Mineral", desc: "Água mineral de 20L para você pedir junto com o seu gás.", href: "/agua-mineral-ribeirao-pires", icon: <CheckCircle2 className="w-6 h-6" /> },
             { label: "Gás do Povo", desc: "Beneficiário do governo? Sua recarga é garantida aqui.", href: "/gas-do-povo-ribeirao-pires", icon: <ShieldCheck className="w-6 h-6" /> },
             { label: "Sobre Nós", desc: "Mais de 10 anos de tradição e confiança na região.", href: "/sobre-nos", icon: <Star className="w-6 h-6" /> },
             { label: "Blog", desc: "Dicas de segurança, receitas e tudo sobre gás de cozinha.", href: "/blog", icon: <Headset className="w-6 h-6" /> }

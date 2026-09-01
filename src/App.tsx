@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './pages/Home';
@@ -13,6 +13,22 @@ import ScrollToTop from './components/ScrollToTop';
 import WhatsAppFloat from './components/WhatsAppFloat';
 
 export default function App() {
+  useEffect(() => {
+    function handleClick(e: MouseEvent) {
+      const target = (e.target as HTMLElement).closest('a[href]');
+      if (target instanceof HTMLAnchorElement && target.href.includes('wa.me')) {
+        if (typeof (window as any).gtag === 'function') {
+          (window as any).gtag('event', 'whatsapp_click', {
+            link_url: target.href,
+            page_path: window.location.pathname,
+          });
+        }
+      }
+    }
+    document.addEventListener('click', handleClick);
+    return () => document.removeEventListener('click', handleClick);
+  }, []);
+
   return (
     <BrowserRouter>
       <ScrollToTop />

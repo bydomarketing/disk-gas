@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { 
   MapPin, Handshake, Headset, ShieldCheck, MessageCircle, 
-  CalendarCheck, Award, CheckCircle2, Droplets, Star, ArrowRight, Truck
+  CalendarCheck, Award, CheckCircle2, Droplets, Star, ArrowRight, Motorbike
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
@@ -334,7 +334,7 @@ export default function SobreNos() {
                 Nossa atuação está voltada principalmente para Ribeirão Pires e Mauá, aproximando o serviço de quem precisa de gás de cozinha e água nessas duas cidades.
               </p>
               <p>
-                Em Ribeirão Pires, estamos localizados no bairro Santa Luzia e atendemos clientes que procuram por gás de cozinha, distribuidora de gás, entrega de gás e pedido pelo WhatsApp.
+                Em Ribeirão Pires, estamos localizados no bairro Santa Luzia e atendemos clientes que procuram por gás de cozinha, revenda de gás, entrega de gás e pedido pelo WhatsApp.
               </p>
               <p>
                 Também realizamos atendimento em Mauá, ampliando nossa área de atuação. O atendimento é feito diretamente pelo WhatsApp, tornando o pedido mais simples e acessível.
@@ -558,9 +558,9 @@ export default function SobreNos() {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
-            { label: "Gás de Cozinha Ribeirão Pires", desc: "Entrega rápida de gás com a Nacional Gás.", href: "/gas-de-cozinha-ribeirao-pires", icon: <Truck className="w-6 h-6" /> },
-            { label: "Gás de Cozinha Mauá", desc: "Entrega rápida de gás em Mauá com WhatsApp exclusivo.", href: "/gas-de-cozinha-maua", icon: <Truck className="w-6 h-6" /> },
-            { label: "Água Mineral", desc: "Água mineral de 20L das melhores marcas, entrega no mesmo caminhão.", href: "/agua-mineral-ribeirao-pires", icon: <Droplets className="w-6 h-6" /> },
+            { label: "Gás de Cozinha Ribeirão Pires", desc: "Entrega rápida de gás com a Nacional Gás.", href: "/gas-de-cozinha-ribeirao-pires", icon: <Motorbike className="w-6 h-6" /> },
+            { label: "Gás de Cozinha Mauá", desc: "Entrega rápida de gás em Mauá com WhatsApp exclusivo.", href: "/gas-de-cozinha-maua", icon: <Motorbike className="w-6 h-6" /> },
+            { label: "Água Mineral", desc: "Água mineral de 20L para você pedir junto com o seu gás.", href: "/agua-mineral-ribeirao-pires", icon: <Droplets className="w-6 h-6" /> },
             { label: "Gás do Povo", desc: "Beneficiário do governo? Sua recarga é garantida aqui.", href: "/gas-do-povo-ribeirao-pires", icon: <Handshake className="w-6 h-6" /> },
             { label: "Blog", desc: "Dicas de segurança, receitas e tudo sobre gás de cozinha.", href: "/blog", icon: <Headset className="w-6 h-6" /> }
           ].map((item, i) => (

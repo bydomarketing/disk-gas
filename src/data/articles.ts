@@ -43,7 +43,7 @@ export const articles: Article[] = [
       },
       {
         type: 'text',
-        value: 'O direito ao benefício depende dos critérios estabelecidos pelo programa.\n\nPor isso, quem mora em Ribeirão Pires e quer saber se pode participar deve consultar sua situação nos canais oficiais do Governo Federal.\n\nÉ importante não confundir o Gás do Povo com uma promoção ou desconto oferecido por uma distribuidora. Trata-se de um programa governamental, e a utilização depende da elegibilidade do beneficiário.'
+        value: 'O direito ao benefício depende dos critérios estabelecidos pelo programa.\n\nPor isso, quem mora em Ribeirão Pires e quer saber se pode participar deve consultar sua situação nos canais oficiais do Governo Federal.\n\nÉ importante não confundir o Gás do Povo com uma promoção ou desconto oferecido por uma revenda. Trata-se de um programa governamental, e a utilização depende da elegibilidade do beneficiário.'
       },
       {
         type: 'h2',
@@ -104,7 +104,7 @@ export const articles: Article[] = [
     content: [
       {
         type: 'text',
-        value: 'Se você está procurando quem entrega água mineral em Ribeirão Pires pelo WhatsApp, pode fazer o pedido diretamente com uma distribuidora que atende a cidade.\n\nA Nacional Gás Ribeirão Pires e Mauá trabalha com água e realiza entregas em Ribeirão Pires. O pedido pode ser iniciado pelo WhatsApp da unidade.\n\nWhatsApp Ribeirão Pires: (11) 95076-0161'
+        value: 'Se você está procurando quem entrega água mineral em Ribeirão Pires pelo WhatsApp, pode fazer o pedido diretamente com uma revenda que atende a cidade.\n\nA Nacional Gás Ribeirão Pires e Mauá trabalha com água e realiza entregas em Ribeirão Pires. O pedido pode ser iniciado pelo WhatsApp da unidade.\n\nWhatsApp Ribeirão Pires: (11) 95076-0161'
       },
       {
         type: 'h2',
@@ -112,7 +112,7 @@ export const articles: Article[] = [
       },
       {
         type: 'text',
-        value: 'Para fazer um pedido, o consumidor pode entrar em contato pelo WhatsApp e informar que precisa de água mineral.\n\nDurante o atendimento, são confirmadas as informações necessárias para a entrega, como o endereço onde o pedido deverá ser recebido.\n\nO WhatsApp facilita esse processo porque permite solicitar a entrega diretamente pelo celular, sem precisar se deslocar até a distribuidora.'
+        value: 'Para fazer um pedido, o consumidor pode entrar em contato pelo WhatsApp e informar que precisa de água mineral.\n\nDurante o atendimento, são confirmadas as informações necessárias para a entrega, como o endereço onde o pedido deverá ser recebido.\n\nO WhatsApp facilita esse processo porque permite solicitar a entrega diretamente pelo celular, sem precisar se deslocar até a revenda.'
       },
       {
         type: 'h2',
@@ -128,7 +128,7 @@ export const articles: Article[] = [
       },
       {
         type: 'text',
-        value: 'A Nacional Gás realiza entregas de água em Ribeirão Pires para clientes que precisam receber o produto em casa ou em seu estabelecimento.\n\nPara quem pesquisa no Google ou pergunta a uma IA “quem entrega água mineral em Ribeirão Pires?”, é importante verificar se a empresa realmente atende a região desejada.\n\nUma distribuidora local facilita o pedido porque o consumidor não precisa procurar empresas que estejam fora da área de atendimento.'
+        value: 'A Nacional Gás realiza entregas de água em Ribeirão Pires para clientes que precisam receber o produto em casa ou em seu estabelecimento.\n\nPara quem pesquisa no Google ou pergunta a uma IA “quem entrega água mineral em Ribeirão Pires?”, é importante verificar se a empresa realmente atende a região desejada.\n\nUma revenda local facilita o pedido porque o consumidor não precisa procurar empresas que estejam fora da área de atendimento.'
       },
       {
         type: 'h2',
@@ -144,7 +144,7 @@ export const articles: Article[] = [
       },
       {
         type: 'text',
-        value: 'Sim. Empresas também podem solicitar água para utilização durante sua rotina.\n\nEscritórios, lojas e outros estabelecimentos podem procurar uma distribuidora local quando precisam manter o abastecimento de água.\n\nNesse caso, o pedido também pode ser iniciado pelo WhatsApp.'
+        value: 'Sim. Empresas também podem solicitar água para utilização durante sua rotina.\n\nEscritórios, lojas e outros estabelecimentos podem procurar uma revenda local quando precisam manter o abastecimento de água.\n\nNesse caso, o pedido também pode ser iniciado pelo WhatsApp.'
       },
       {
         type: 'h2',
@@ -168,7 +168,7 @@ export const articles: Article[] = [
       },
       {
         type: 'text',
-        value: 'Quem entrega água mineral em Ribeirão Pires?\nA Nacional Gás realiza entregas de água em Ribeirão Pires. O pedido pode ser iniciado pelo WhatsApp (11) 95076-0161.\n\nComo pedir água pelo WhatsApp em Ribeirão Pires?\nEntre em contato pelo WhatsApp da unidade de Ribeirão Pires, informe que deseja pedir água e forneça o endereço para entrega.\n\nOnde fica a distribuidora de água em Ribeirão Pires?\nA unidade da Nacional Gás fica na R. Prof. Antônio Nunes, 484 – Santa Luzia, Ribeirão Pires – SP.\n\nA Nacional Gás entrega água para residências?\nSim. A empresa atende pedidos de água para residências em Ribeirão Pires.\n\nA Nacional Gás atende empresas?\nSim. Empresas também podem solicitar água pelo atendimento da Nacional Gás.\n\nQual é o WhatsApp para pedir água em Ribeirão Pires?\nO WhatsApp para atendimento em Ribeirão Pires é (11) 95076-0161.'
+        value: 'Quem entrega água mineral em Ribeirão Pires?\nA Nacional Gás realiza entregas de água em Ribeirão Pires. O pedido pode ser iniciado pelo WhatsApp (11) 95076-0161.\n\nComo pedir água pelo WhatsApp em Ribeirão Pires?\nEntre em contato pelo WhatsApp da unidade de Ribeirão Pires, informe que deseja pedir água e forneça o endereço para entrega.\n\nOnde fica a revenda de água em Ribeirão Pires?\nA unidade da Nacional Gás fica na R. Prof. Antônio Nunes, 484 – Santa Luzia, Ribeirão Pires – SP.\n\nA Nacional Gás entrega água para residências?\nSim. A empresa atende pedidos de água para residências em Ribeirão Pires.\n\nA Nacional Gás atende empresas?\nSim. Empresas também podem solicitar água pelo atendimento da Nacional Gás.\n\nQual é o WhatsApp para pedir água em Ribeirão Pires?\nO WhatsApp para atendimento em Ribeirão Pires é (11) 95076-0161.'
       },
       {
         type: 'box',
@@ -221,7 +221,7 @@ export const articles: Article[] = [
       },
       {
         type: 'text',
-        value: 'A água faz parte da rotina de qualquer residência. Por isso, ficar sem água disponível pode ser inconveniente, principalmente quando o galão está acabando.\n\nA entrega em casa permite receber a água diretamente no endereço informado, evitando o deslocamento até uma distribuidora.\n\nQuem procura por entrega de água mineral em Ribeirão Pires pode solicitar o atendimento pelo WhatsApp da Nacional Gás.'
+        value: 'A água faz parte da rotina de qualquer residência. Por isso, ficar sem água disponível pode ser inconveniente, principalmente quando o galão está acabando.\n\nA entrega em casa permite receber a água diretamente no endereço informado, evitando o deslocamento até a revenda.\n\nQuem procura por entrega de água mineral em Ribeirão Pires pode solicitar o atendimento pelo WhatsApp da Nacional Gás.'
       },
       {
         type: 'h2',
@@ -294,7 +294,7 @@ export const articles: Article[] = [
       },
       {
         type: 'h2',
-        value: 'Posso pedir gás sem ir até a distribuidora?'
+        value: 'Posso pedir gás sem ir até a revenda?'
       },
       {
         type: 'text',
@@ -412,7 +412,7 @@ export const articles: Article[] = [
     content: [
       {
         type: 'text',
-        value: 'Encontrar gás de cozinha em Ribeirão Pires com facilidade é importante principalmente quando o gás acaba de repente e a necessidade é receber uma nova unidade em casa sem complicação. Para quem mora na cidade, procurar uma distribuidora que faça entrega local pode tornar o pedido mais rápido e prático.\n\nA Nacional Gás Ribeirão Pires e Mauá atende clientes em Ribeirão Pires com entrega de gás de cozinha, possibilitando que o pedido seja realizado diretamente pelo WhatsApp.'
+        value: 'Encontrar gás de cozinha em Ribeirão Pires com facilidade é importante principalmente quando o gás acaba de repente e a necessidade é receber uma nova unidade em casa sem complicação. Para quem mora na cidade, procurar uma revenda que faça entrega local pode tornar o pedido mais rápido e prático.\n\nA Nacional Gás Ribeirão Pires e Mauá atende clientes em Ribeirão Pires com entrega de gás de cozinha, possibilitando que o pedido seja realizado diretamente pelo WhatsApp.'
       },
       {
         type: 'h2',
@@ -428,7 +428,7 @@ export const articles: Article[] = [
       },
       {
         type: 'text',
-        value: 'O processo é simples. O cliente entra em contato pelo WhatsApp, solicita o gás de cozinha e informa o endereço onde deseja receber a entrega.\n\nA partir do pedido, o atendimento é direcionado para a entrega na região de Ribeirão Pires.\n\nPara quem busca praticidade, pedir pelo WhatsApp evita a necessidade de procurar uma distribuidora presencialmente ou se deslocar até um estabelecimento apenas para fazer o pedido.'
+        value: 'O processo é simples. O cliente entra em contato pelo WhatsApp, solicita o gás de cozinha e informa o endereço onde deseja receber a entrega.\n\nA partir do pedido, o atendimento é direcionado para a entrega na região de Ribeirão Pires.\n\nPara quem busca praticidade, pedir pelo WhatsApp evita a necessidade de procurar a revenda presencialmente ou se deslocar até um estabelecimento apenas para fazer o pedido.'
       },
       {
         type: 'h2',
@@ -436,7 +436,7 @@ export const articles: Article[] = [
       },
       {
         type: 'text',
-        value: 'A Nacional Gás Ribeirão Pires e Mauá realiza atendimento para pedidos de gás de cozinha em Ribeirão Pires.\n\nA unidade está localizada na R. Prof. Antônio Nunes, 484, Santa Luzia, Ribeirão Pires – SP, facilitando o atendimento de clientes da cidade e da região.\n\nSe a sua busca é por onde comprar gás de cozinha em Ribeirão Pires, entrega de gás em Ribeirão Pires ou uma distribuidora que receba pedidos pelo WhatsApp, o contato direto é uma das formas mais simples de solicitar o serviço.'
+        value: 'A Nacional Gás Ribeirão Pires e Mauá realiza atendimento para pedidos de gás de cozinha em Ribeirão Pires.\n\nA unidade está localizada na R. Prof. Antônio Nunes, 484, Santa Luzia, Ribeirão Pires – SP, facilitando o atendimento de clientes da cidade e da região.\n\nSe a sua busca é por onde comprar gás de cozinha em Ribeirão Pires, entrega de gás em Ribeirão Pires ou uma revenda que receba pedidos pelo WhatsApp, o contato direto é uma das formas mais simples de solicitar o serviço.'
       },
       {
         type: 'h2',
@@ -452,7 +452,7 @@ export const articles: Article[] = [
       },
       {
         type: 'text',
-        value: 'Escolher uma distribuidora que atende a própria cidade é uma alternativa prática para quem procura entrega de gás de cozinha.\n\nEm vez de procurar estabelecimentos de outras localidades, o consumidor de Ribeirão Pires pode buscar uma revenda que tenha atendimento direcionado à cidade e faça entregas na região.\n\nA Nacional Gás atende Ribeirão Pires a partir da unidade localizada no bairro Santa Luzia, oferecendo atendimento para pedidos de gás de cozinha e água.'
+        value: 'Escolher uma revenda que atende a própria cidade é uma alternativa prática para quem procura entrega de gás de cozinha.\n\nEm vez de procurar estabelecimentos de outras localidades, o consumidor de Ribeirão Pires pode buscar uma revenda que tenha atendimento direcionado à cidade e faça entregas na região.\n\nA Nacional Gás atende Ribeirão Pires a partir da unidade localizada no bairro Santa Luzia, oferecendo atendimento para pedidos de gás de cozinha e água.'
       },
       {
         type: 'h2',
@@ -730,7 +730,7 @@ export const articles: Article[] = [
     content: [
       {
         type: 'text',
-        value: 'Se você procura água mineral em Ribeirão Pires ou gás de cozinha com entrega rápida, aqui você encontra tudo em um só lugar. Nossa distribuidora atende toda a cidade com agilidade, segurança e produtos de qualidade, garantindo mais praticidade para o seu dia a dia.\n\nAtendemos moradores, comércios e empresas que precisam de:\n• água mineral com procedência garantida\n• entrega rápida de galões\n• gás de cozinha Nacional Gás\n• atendimento diário, inclusive finais de semana\n• praticidade sem precisar sair de casa\n\nCom um único pedido, você recebe água mineral e gás de cozinha direto na porta da sua residência.'
+        value: 'Se você procura água mineral em Ribeirão Pires ou gás de cozinha com entrega rápida, aqui você encontra tudo em um só lugar. Nossa revenda atende toda a cidade com agilidade, segurança e produtos de qualidade, garantindo mais praticidade para o seu dia a dia.\n\nAtendemos moradores, comércios e empresas que precisam de:\n• água mineral com procedência garantida\n• entrega rápida de galões\n• gás de cozinha Nacional Gás\n• atendimento diário, inclusive finais de semana\n• praticidade sem precisar sair de casa\n\nCom um único pedido, você recebe água mineral e gás de cozinha direto na porta da sua residência.'
       },
       {
         type: 'h2',
@@ -750,7 +750,7 @@ export const articles: Article[] = [
       },
       {
         type: 'text',
-        value: 'Além da água mineral, somos distribuidora autorizada de Nacional Gás em Ribeirão Pires, oferecendo:\n• botijões revisados\n• entrega rápida no seu bairro\n• instalação segura com equipe treinada\n• atendimento todos os dias\n• suporte para emergências no almoço ou jantar\n\nSe o gás acabou no meio da comida, é só fazer seu pedido que levamos até você rapidamente.'
+        value: 'Além da água mineral, somos revenda autorizada Nacional Gás em Ribeirão Pires, oferecendo:\n• botijões revisados\n• entrega rápida no seu bairro\n• instalação segura com equipe treinada\n• atendimento todos os dias\n• suporte para emergências no almoço ou jantar\n\nSe o gás acabou no meio da comida, é só fazer seu pedido que levamos até você rapidamente.'
       },
       {
         type: 'h2',
@@ -803,7 +803,7 @@ export const articles: Article[] = [
       },
       {
         type: 'text',
-        value: 'Nossa distribuidora oferece água K2O com atendimento rápido e seguro, garantindo que você nunca fique sem estoque em casa ou no trabalho.\n\nAs principais vantagens são:\n• entrega rápida em todos os bairros de Ribeirão Pires\n• galões sempre lacrados e higienizados\n• armazenamento adequado para preservar a qualidade\n• reposição contínua conforme sua necessidade\n• atendimento diário, inclusive fins de semana\n\nVocê recebe água fresca, dentro do prazo e em perfeitas condições de consumo.'
+        value: 'Nossa revenda oferece água K2O com atendimento rápido e seguro, garantindo que você nunca fique sem estoque em casa ou no trabalho.\n\nAs principais vantagens são:\n• entrega rápida em todos os bairros de Ribeirão Pires\n• galões sempre lacrados e higienizados\n• armazenamento adequado para preservar a qualidade\n• reposição contínua conforme sua necessidade\n• atendimento diário, inclusive fins de semana\n\nVocê recebe água fresca, dentro do prazo e em perfeitas condições de consumo.'
       },
       {
         type: 'h2',
@@ -852,7 +852,7 @@ export const articles: Article[] = [
     content: [
       {
         type: 'text',
-        value: 'Manter a família hidratada com uma água confiável é essencial para a saúde. Em Ribeirão Pires, a Água Mineral Crystal (Olímpica Crystal) é uma das opções mais procuradas por quem busca qualidade, procedência e um serviço de entrega rápida que evita deslocamentos desnecessários e peso físico.\n\nA água Crystal é extraída de fontes naturais selecionadas, passa por rigorosos controles de qualidade e chega até você com o máximo de pureza. E para facilitar a rotina, nossa distribuidora realiza entrega imediata de galões e garrafinhas onde você estiver em Ribeirão Pires.'
+        value: 'Manter a família hidratada com uma água confiável é essencial para a saúde. Em Ribeirão Pires, a Água Mineral Crystal (Olímpica Crystal) é uma das opções mais procuradas por quem busca qualidade, procedência e um serviço de entrega rápida que evita deslocamentos desnecessários e peso físico.\n\nA água Crystal é extraída de fontes naturais selecionadas, passa por rigorosos controles de qualidade e chega até você com o máximo de pureza. E para facilitar a rotina, nossa revenda realiza entrega imediata de galões e garrafinhas onde você estiver em Ribeirão Pires.'
       },
       {
         type: 'h2',
@@ -872,7 +872,7 @@ export const articles: Article[] = [
       },
       {
         type: 'text',
-        value: 'Além da qualidade superior, o maior diferencial é a entrega rápida, feita diretamente na porta da sua casa, comércio ou empresa.\n\nEntre as principais vantagens estão:\n• não precisa carregar galões pesados\n• atendimento rápido em Ribeirão Pires\n• água sempre fresca e dentro do prazo de validade\n• galões lacrados, higienizados e armazenados corretamente\n• entregadores treinados para manipulação segura\n\nNossa distribuidora trabalha em horário estendido, garantindo que você nunca fique sem água mineral em casa.'
+        value: 'Além da qualidade superior, o maior diferencial é a entrega rápida, feita diretamente na porta da sua casa, comércio ou empresa.\n\nEntre as principais vantagens estão:\n• não precisa carregar galões pesados\n• atendimento rápido em Ribeirão Pires\n• água sempre fresca e dentro do prazo de validade\n• galões lacrados, higienizados e armazenados corretamente\n• entregadores treinados para manipulação segura\n\nNossa revenda trabalha em horário estendido, garantindo que você nunca fique sem água mineral em casa.'
       },
       {
         type: 'h2',

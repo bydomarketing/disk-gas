@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { 
-  MessageCircle, Truck, ShieldCheck, CheckCircle2, ChevronDown, 
+  MessageCircle, Motorbike, ShieldCheck, CheckCircle2, ChevronDown, 
   MapPin, Clock, Headset, Zap, Phone, ArrowRight, Star
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -51,12 +51,12 @@ export default function GasDeCozinha() {
   return (
     <div className="min-h-screen bg-white pt-24">
       <SEO 
-        title="Gás de Cozinha Ribeirão Pires | Nacional Gás" 
-        description="Peça gás de cozinha em Ribeirão Pires com entrega rápida. Revenda autorizada Nacional Gás. Atendimento humano pelo WhatsApp, peso garantido e botijões certificados."
+        title="Entrega de Gás em Ribeirão Pires | Nacional Gás" 
+        description="Entrega de gás em Ribeirão Pires com atendimento todos os dias. Peça seu gás pelo WhatsApp com a revenda Nacional Gás e receba em casa."
         canonical="/gas-de-cozinha-ribeirao-pires"
       />
       <Helmet>
-        <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Quanto tempo demora a entrega de gás em Ribeirão Pires?","acceptedAnswer":{"@type":"Answer","text":"A entrega é realizada entre 20 e 40 minutos após a confirmação do pedido, dependendo da localidade em Ribeirão Pires."}},{"@type":"Question","name":"A Nacional Gás é revenda autorizada?","acceptedAnswer":{"@type":"Answer","text":"Sim. Somos revenda autorizada Nacional Gás em Ribeirão Pires, garantindo produto original, peso correto e botijões certificados."}},{"@type":"Question","name":"Quais formas de pagamento são aceitas?","acceptedAnswer":{"@type":"Answer","text":"Aceitamos Pix, cartão de crédito e débito, e dinheiro. A pagamento é feito no momento da entrega."}},{"@type":"Question","name":"Vocês entregam água mineral junto com o gás?","acceptedAnswer":{"@type":"Answer","text":"Sim. Entregamos água mineral de 20 litros junto com o gás de cozinha, tudo no mesmo caminhão e com a mesma agilidade."}},{"@type":"Question","name":"Como pedir gás pelo WhatsApp?","acceptedAnswer":{"@type":"Answer","text":"Basta clicar no botão de WhatsApp, enviar seu endereço e a quantidade desejada. Em minutos confirmamos e saímos para a entrega."}}]}`}</script>
+        <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Quanto tempo demora a entrega de gás em Ribeirão Pires?","acceptedAnswer":{"@type":"Answer","text":"A entrega é realizada com agilidade após a confirmação do pedido, dependendo da localidade em Ribeirão Pires."}},{"@type":"Question","name":"A Nacional Gás é revenda autorizada?","acceptedAnswer":{"@type":"Answer","text":"Sim. Somos revenda autorizada Nacional Gás em Ribeirão Pires, garantindo produto original, peso correto e botijões certificados."}},{"@type":"Question","name":"Quais formas de pagamento são aceitas?","acceptedAnswer":{"@type":"Answer","text":"Aceitamos Pix, cartão de crédito e débito, e dinheiro. A pagamento é feito no momento da entrega."}},{"@type":"Question","name":"Vocês entregam água mineral junto com o gás?","acceptedAnswer":{"@type":"Answer","text":"Sim! Entregamos água mineral de 20 litros e você pode pedir junto com o seu gás de cozinha pelo WhatsApp."}},{"@type":"Question","name":"Como pedir gás pelo WhatsApp?","acceptedAnswer":{"@type":"Answer","text":"Basta clicar no botão de WhatsApp, enviar seu endereço e a quantidade desejada. Confirmamos seu pedido pelo WhatsApp e seguimos com a entrega."}}]}`}</script>
       </Helmet>
 
       {/* HERO */}
@@ -85,11 +85,11 @@ export default function GasDeCozinha() {
               className="text-left"
             >
               <h1 className="text-4xl md:text-6xl font-black mb-8 uppercase tracking-tighter leading-none">
-                Gás de Cozinha em Ribeirão Pires<br/>
-                <span className="text-white text-2xl md:text-4xl block mt-4">com Entrega Rápida</span>
+                Entrega de Gás<br/>
+                <span className="text-white text-2xl md:text-4xl block mt-4">em Ribeirão Pires</span>
               </h1>
               <p className="text-xl font-bold mb-10 opacity-90 leading-tight">
-                Somos revenda autorizada Nacional Gás em Ribeirão Pires. Entrega rápida, atendimento humanizado e botijões com peso e segurança garantidos. Peça agora pelo WhatsApp e receba em minutos.
+                Somos revenda autorizada Nacional Gás em Ribeirão Pires. Entrega rápida, atendimento humanizado e botijões com peso e segurança garantidos. Peça agora pelo WhatsApp e receba com entrega rápida.
               </p>
               <a 
                 href={WHATSAPP_LINK}
@@ -124,7 +124,7 @@ export default function GasDeCozinha() {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
-            { icon: <Zap className="text-nacional-red" />, title: "Entrega rápida", desc: "Seu gás chega entre 20 e 40 minutos. Conhecemos cada rua de Ribeirão Pires para entregar no menor tempo possível." },
+            { icon: <Zap className="text-nacional-red" />, title: "Entrega rápida", desc: "Seu gás chega com entrega rápida. Conhecemos cada rua de Ribeirão Pires para entregar com agilidade." },
             { icon: <ShieldCheck className="text-nacional-blue" />, title: "Revenda autorizada", desc: "Somos revenda oficial Nacional Gás. Produto original, procedência garantida e botijões que seguem rigorosos padrões de qualidade." },
             { icon: <CheckCircle2 className="text-green-500" />, title: "Peso e segurança garantidos", desc: "Cada botijão passa por conferência de peso e revisão antes de chegar até você. Zero surpresas." },
             { icon: <Headset className="text-nacional-red" />, title: "Atendimento pelo WhatsApp", desc: "Fale diretamente com nossa equipe. Sem robôs, sem filas. Atendimento humano, rápido e eficiente." }
@@ -184,7 +184,7 @@ export default function GasDeCozinha() {
               {[
                 { step: "01", title: "Faça seu pedido", desc: "Entre em contato pelo WhatsApp, informe seu endereço e a quantidade de botijões que você precisa." },
                 { step: "02", title: "Separamos seu pedido", desc: "Nossa equipe separa e conferir o peso de cada botijão para garantir que tudo esteja correto." },
-                { step: "03", title: "Entregamos com rapidez", desc: "Nosso entregador sai imediatamente para o seu endereço. A maioria das entregas é concluída em até 40 minutos." },
+                { step: "03", title: "Entregamos com rapidez", desc: "Nosso entregador sai para o seu endereço. Entrega rápida e prática." },
                 { step: "04", title: "Você recebe com segurança", desc: "Botijão certificado, com lacre intacto e peso exato. Pronto para uso com total tranquilidade." }
               ].map((item, i) => (
                 <motion.div 
@@ -241,7 +241,7 @@ export default function GasDeCozinha() {
                 Conhecemos as ruas, os atalhos e os horários de maior movimento da cidade. Isso nos permite planejar a rota mais eficiente e garantir que seu pedido chegue rápido — sem atrasos, sem complicação.
               </p>
               <p>
-                Se você precisa de gás de cozinha em Ribeirão Pires com entrega no mesmo dia, basta nos chamar no WhatsApp. Atendemos de segunda a sábado das 8h às 20h, e domingos e feriados das 8h às 14h.
+                Se você precisa de <Link to="/" className="underline hover:text-nacional-red transition-colors">gás de cozinha em Ribeirão Pires</Link> com entrega rápida, basta nos chamar no WhatsApp. Atendemos de segunda a sábado das 8h às 20h, e domingos e feriados das 8h às 14h.
               </p>
             </motion.div>
 
@@ -347,7 +347,7 @@ export default function GasDeCozinha() {
               {[
                 { icon: <ShieldCheck className="w-5 h-5 text-nacional-blue" />, text: "Produto certificado" },
                 { icon: <CheckCircle2 className="w-5 h-5 text-green-500" />, text: "Peso conferido" },
-                { icon: <Truck className="w-5 h-5 text-nacional-red" />, text: "Entrega própria" },
+                { icon: <Motorbike className="w-5 h-5 text-nacional-red" />, text: "Entrega própria" },
                 { icon: <Headset className="w-5 h-5 text-nacional-blue" />, text: "Suporte humano" }
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100">
@@ -381,7 +381,7 @@ export default function GasDeCozinha() {
             <div className="space-y-2">
               <FAQItem 
                 question="Quanto tempo demora a entrega de gás em Ribeirão Pires?" 
-                answer="Nossa meta é entregar entre 20 e 40 minutos após a confirmação do pedido, dependendo da sua localidade. Conhecemos cada rua e atalho de Ribeirão Pires para chegar até você no menor tempo possível." 
+                answer="Entrega rápida na sua casa após a confirmação do pedido, dependendo da sua localidade. Conhecemos cada rua e atalho de Ribeirão Pires para chegar até você." 
               />
               <FAQItem 
                 question="A Nacional Gás é revenda autorizada?" 
@@ -393,11 +393,11 @@ export default function GasDeCozinha() {
               />
               <FAQItem 
                 question="Vocês entregam água mineral junto com o gás?" 
-                answer="Sim! Entregamos água mineral de 20 litros junto com o gás de cozinha. Tudo no mesmo caminhão, com a mesma agilidade e sem custo adicional de frete. Basta solicitar no momento do pedido." 
+                answer="Sim! Entregamos água mineral de 20 litros e você pode pedir junto com o seu gás de cozinha pelo WhatsApp." 
               />
               <FAQItem 
                 question="Como pedir gás pelo WhatsApp?" 
-                answer="É muito simples: clique no botão de WhatsApp nesta página, envie sua mensagem informando o endereço, a quantidade de botijões e se deseja água mineral. Em instantes confirmamos seu pedido e saímos para a entrega." 
+                answer="É muito simples: clique no botão de WhatsApp nesta página, envie sua mensagem informando o endereço, a quantidade de botijões e se deseja água mineral. Confirmamos seu pedido pelo WhatsApp e seguimos com a entrega." 
               />
               <FAQItem 
                 question="Atendem em quais bairros de Ribeirão Pires?" 
@@ -429,7 +429,7 @@ export default function GasDeCozinha() {
               <span className="text-white text-2xl md:text-4xl block mt-4">A NACIONAL GÁS RESOLVE AGORA.</span>
             </h2>
             <p className="text-xl font-bold mb-10 opacity-90 leading-tight max-w-2xl mx-auto">
-              Não deixe para depois. Peça seu gás de cozinha pelo WhatsApp e receba em minutos. Entrega rápida, peso garantido e atendimento de verdade.
+              Não deixe para depois. Peça seu gás de cozinha pelo WhatsApp e receba com entrega rápida. Entrega rápida, peso garantido e atendimento de verdade.
             </p>
             <a 
               href={WHATSAPP_LINK}
@@ -456,8 +456,8 @@ export default function GasDeCozinha() {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
-            { label: "Gás de Cozinha Mauá", desc: "Entrega rápida de gás em Mauá com a Nacional Gás.", href: "/gas-de-cozinha-maua", icon: <Truck className="w-6 h-6" /> },
-            { label: "Água Mineral", desc: "Água mineral de 20L das melhores marcas, entrega no mesmo caminhão.", href: "/agua-mineral-ribeirao-pires", icon: <CheckCircle2 className="w-6 h-6" /> },
+            { label: "Gás de Cozinha Mauá", desc: "Entrega rápida de gás em Mauá com a Nacional Gás.", href: "/gas-de-cozinha-maua", icon: <Motorbike className="w-6 h-6" /> },
+            { label: "Água Mineral", desc: "Água mineral de 20L para você pedir junto com o seu gás.", href: "/agua-mineral-ribeirao-pires", icon: <CheckCircle2 className="w-6 h-6" /> },
             { label: "Gás do Povo", desc: "Beneficiário do governo? Sua recarga é garantida aqui.", href: "/gas-do-povo-ribeirao-pires", icon: <ShieldCheck className="w-6 h-6" /> },
             { label: "Sobre Nós", desc: "Mais de 10 anos de tradição e confiança em Ribeirão Pires.", href: "/sobre-nos", icon: <Star className="w-6 h-6" /> },
             { label: "Blog", desc: "Dicas de segurança, receitas e tudo sobre gás de cozinha.", href: "/blog", icon: <Headset className="w-6 h-6" /> }

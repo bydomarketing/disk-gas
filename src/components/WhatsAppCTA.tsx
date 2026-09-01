@@ -15,7 +15,7 @@ export default function WhatsAppCTA() {
           Não fique sem <span className="text-nacional-red">cozinhar!</span>
         </h3>
         <p className="text-lg md:text-xl text-slate-600 font-bold mb-8 leading-tight">
-          Peça seu gás agora e receba em minutos em qualquer lugar de Ribeirão Pires.
+          Peça seu gás agora e receba com entrega rápida em qualquer lugar de Ribeirão Pires.
         </p>
         
         <div className="flex justify-center">

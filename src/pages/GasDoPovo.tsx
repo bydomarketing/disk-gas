@@ -418,7 +418,7 @@ export default function GasDoPovo() {
           {[
             { label: "Gás de Cozinha Ribeirão Pires", desc: "Entrega rápida de gás em Ribeirão Pires com a Nacional Gás.", href: "/gas-de-cozinha-ribeirao-pires", icon: <Zap className="w-6 h-6" /> },
             { label: "Gás de Cozinha Mauá", desc: "Entrega rápida de gás em Mauá com a Nacional Gás.", href: "/gas-de-cozinha-maua", icon: <Zap className="w-6 h-6" /> },
-            { label: "Água Mineral", desc: "Água mineral de 20L das melhores marcas, entrega no mesmo caminhão.", href: "/agua-mineral-ribeirao-pires", icon: <CheckCircle2 className="w-6 h-6" /> },
+            { label: "Água Mineral", desc: "Água mineral de 20L para você pedir junto com o seu gás.", href: "/agua-mineral-ribeirao-pires", icon: <CheckCircle2 className="w-6 h-6" /> },
             { label: "Sobre Nós", desc: "Mais de 10 anos de tradição e confiança em Ribeirão Pires.", href: "/sobre-nos", icon: <ShieldCheck className="w-6 h-6" /> },
             { label: "Blog", desc: "Dicas de segurança, receitas e tudo sobre gás de cozinha.", href: "/blog", icon: <Headset className="w-6 h-6" /> }
           ].map((item, i) => (

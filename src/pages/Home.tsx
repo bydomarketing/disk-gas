@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { 
   MessageCircle, 
-  Truck, 
+  Motorbike, 
   ShieldCheck, 
   Clock, 
   Droplets, 
@@ -23,7 +23,7 @@ import { motion, AnimatePresence } from 'motion/react';
 const WHATSAPP_LINK = "https://wa.me/5511950760161?text=Olá! Gostaria de pedir um gás.";
 const FACEBOOK_LINK = "https://www.facebook.com/people/Diskgasdecozinha-Nacional-Gas/pfbid02bsYJLPtzkMEMzaFkqp6xwSZgmFUQ375U2A6xTddvtrGiWu3PR2ffbLRejwnRUhnEl/";
 const INSTAGRAM_LINK = "https://www.instagram.com/diskgasdecozinha.nacionalgas/";
-const GOOGLE_MAPS_LINK = "https://www.google.com/maps?sca_esv=4ae20d8bd47daad1&output=search&q=nacional+gas+em+santa+luzia+ribeirao+pires&source=lnms&fbs=ADc_l-acAb_3MMOAUx0zmbUpgBqRuweMR6bfOpj9a0gCa_xFt1zigmJhliJsoTZAqvO7YjNqvECqJyHcucT6SvCRq4iI2pblmVi1tfZ4EA_MceO-AEmXmajTtib7OosMAtVl1m1iaqRZvDymqiM12_XulMnMgNEBXrh38-3R9AwSTWxRw7J40Ijk3tH1ExEXGBF5G8j8fiW9ZGz-Gt9dZQxNhTbL8XLpzA&entry=mc&ved=1t:200715&ictx=111";
+const GOOGLE_MAPS_LINK = "https://www.google.com/maps/place/Nacional+G%C3%A1s+-+G%C3%A1s+de+Cozinha+em+Ribeir%C3%A3o+Pires/@-23.6953844,-46.3976936,1971m/data=!3m1!1e3!4m10!1m2!2m1!1snacional+gas+em+santa+luzia+ribeirao+pires!3m6!1s0x94ce6dbc6e7fa995:0xe9887ebeed126066!8m2!3d-23.6912293!4d-46.3887274!15sCipuYWNpb25hbCBnYXMgZW0gc2FudGEgbHV6aWEgcmliZWlyYW8gcGlyZXMiA4gBAVosIipuYWNpb25hbCBnYXMgZW0gc2FudGEgbHV6aWEgcmliZWlyYW8gcGlyZXOSAQtnYXNfY29tcGFueZoBRENpOURRVWxSUVVOdlpFTm9kSGxqUmpsdlQyeFNibFpWTldGT1JUbHBUMWN4Vms1V1ZteGFiV2N6VlZoV2RVMHlZeEFC4AEA-gEECAAQPg!16s%2Fg%2F11t7vz90tr?entry=ttu&g_ep=EgoyMDI2MDgzMC4wIKXMDSoASAFQAw%3D%3D";
 
 const GoogleReviewCard = ({ name, text, stars = 5, time = "há 2 dias" }: { name: string, text: string, stars?: number, time?: string, key?: React.Key }) => (
   <motion.div
@@ -146,6 +146,7 @@ const FAQItem = ({ question, answer }: { question: string, answer: string }) => 
   );
 };
 
+import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 import { Helmet } from 'react-helmet-async';
 
@@ -158,7 +159,7 @@ export default function Home() {
         canonical="/"
       />
       <Helmet>
-        <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"LocalBusiness","name":"Nacional Gás Ribeirão Pires","description":"Revenda autorizada Nacional Gás em Ribeirão Pires. Entrega rápida de gás de cozinha e água mineral.","url":"https://diskgasdecozinha.com.br/","telephone":"+5511950760161","address":{"@type":"PostalAddress","streetAddress":"R. Prof. Antônio Nunes, 484","addressLocality":"Ribeirão Pires","addressRegion":"SP","postalCode":"09430-380","addressCountry":"BR"},"geo":{"@type":"GeoCoordinates","latitude":-23.7155556,"longitude":-46.4069444},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"08:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Sunday"],"opens":"08:00","closes":"14:00"}],"priceRange":"$$"}`}</script>
+        <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"LocalBusiness","name":"Nacional Gás Ribeirão Pires","description":"Revenda autorizada Nacional Gás em Ribeirão Pires. Entrega rápida de gás de cozinha e água mineral.","url":"https://diskgasdecozinha.com.br/","telephone":"+5511950760161","address":{"@type":"PostalAddress","streetAddress":"R. Prof. Antônio Nunes, 484","addressLocality":"Ribeirão Pires","addressRegion":"SP","postalCode":"09430-380","addressCountry":"BR"},"geo":{"@type":"GeoCoordinates","latitude":-23.6912293,"longitude":-46.3887274},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"08:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Sunday"],"opens":"08:00","closes":"14:00"}],"priceRange":"$$"}`}</script>
       </Helmet>
       {/* SEÇÃO 1: Hero - High Impact */}
       <section id="inicio" className="relative h-[100dvh] md:h-[850px] flex items-center md:items-start overflow-hidden pt-16 md:pt-28">
@@ -184,7 +185,7 @@ export default function Home() {
               animate={{ scale: 1, opacity: 1 }}
               className="inline-block bg-nacional-blue text-white px-3 py-1 md:px-6 md:py-2 rounded-full text-[10px] md:text-sm font-black uppercase tracking-widest mb-20 md:mb-8 shadow-2xl"
             >
-              🚀 ENTREGA MAIS RÁPIDA DA CIDADE
+              REVENDA NACIONAL GÁS EM RIBEIRÃO PIRES
             </motion.div>
             
             <h1 className="text-3xl md:text-7xl font-black text-white leading-[0.9] mb-4 md:mb-8 uppercase tracking-tighter drop-shadow-[0_2px_15px_rgba(0,0,0,0.8)]">
@@ -193,20 +194,16 @@ export default function Home() {
             </h1>
             
             <p className="text-base md:text-3xl text-white mb-6 md:mb-12 leading-tight font-bold drop-shadow-lg max-w-lg">
-              Somos distribuidor autorizada da Nacional Gás em Ribeirão Pires com entrega rápida e preço justo. <br className="hidden md:block"/><br className="hidden md:block"/>
-              Disk gás de cozinha agora mesmo!
+              Peça seu gás de cozinha pelo WhatsApp e receba em casa com atendimento todos os dias.
             </p>
 
-            <div className="flex items-center gap-4">
-              {/* Red Button - Aligned left */}
-              <motion.div 
-                animate={{ rotate: [0, 2, -2, 0] }}
-                transition={{ repeat: Infinity, duration: 4 }}
-                className="inline-flex bg-nacional-red text-white p-3.5 md:p-6 rounded-2xl shadow-2xl border-2 md:border-4 border-white flex-col items-center justify-center -rotate-2"
+            <a 
+                href={WHATSAPP_LINK}
+                className="inline-flex items-center gap-4 bg-white text-nacional-red px-10 py-5 rounded-2xl text-xl font-black hover:bg-slate-100 transition-all shadow-2xl uppercase tracking-tighter"
               >
-                <span className="text-base md:text-2xl font-black uppercase tracking-tighter italic">chega rapidinho!</span>
-              </motion.div>
-            </div>
+                <MessageCircle className="w-6 h-6" />
+                PEDIR GÁS PELO WHATSAPP
+              </a>
           </motion.div>
         </div>
       </section>
@@ -217,9 +214,9 @@ export default function Home() {
           <div className="md:flex items-center gap-12 relative z-10">
             <div className="flex-1">
               <div className="inline-block bg-nacional-blue text-white px-4 py-1 rounded-full text-xs font-black uppercase mb-6">PARCEIRO OFICIAL</div>
-              <h2 className="text-4xl md:text-6xl font-black text-nacional-blue mb-6 leading-none uppercase tracking-tighter">
-                GÁS DO POVO<br/><span className="text-nacional-red">EM RIBEIRÃO PIRES</span>
-              </h2>
+<h2 className="text-4xl md:text-6xl font-black text-nacional-blue mb-6 leading-none uppercase tracking-tighter">
+              <Link to="/gas-do-povo-ribeirao-pires">GÁS DO POVO<br/><span className="text-nacional-red">EM RIBEIRÃO PIRES</span></Link>
+            </h2>
               <p className="text-slate-700 text-xl font-bold leading-tight mb-6 md:mb-10">
                 Beneficiário do Governo? Sua recarga é garantida aqui em Ribeirão Pires. Simples, seguro e sem burocracia.
               </p>
@@ -302,17 +299,17 @@ export default function Home() {
             whileInView={{ opacity: 1, scale: 1 }}
             className="text-5xl md:text-7xl font-black text-nacional-blue uppercase tracking-tighter mb-4"
           >
-            POR QUE <span className="text-nacional-red">ESCOLHER</span> NOSSA DISTRIBUIDORA DE GÁS EM RIBEIRÃO PIRES
+            POR QUE <span className="text-nacional-red">ESCOLHER</span> NOSSA REVENDA DE GÁS EM RIBEIRÃO PIRES
           </motion.h2>
           <div className="h-3 bg-nacional-red w-48 mx-auto rounded-full"></div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {[
-            { icon: <Zap />, title: "Revenda autorizada Nacional Gás", desc: "Seu gás na porta entre 20 a 40 minutos. Agilidade real.", color: "bg-nacional-red" },
-            { icon: <CreditCard />, title: "Atendimento rápido", desc: "Aceitamos Pix, Cartão ou Dinheiro. Praticidade total.", color: "bg-nacional-blue" },
-            { icon: <Headset />, title: "Segurança e qualidade", desc: "Fale com pessoas de verdade. Sem robôs.", color: "bg-green-500" },
-            { icon: <ShieldCheck />, title: "Entrega no mesmo dia", desc: "Revenda Autorizada com peso garantido.", color: "bg-nacional-red" }
+{ icon: <Zap />, title: "Revenda autorizada Nacional Gás", desc: "Botijões certificados e procedência garantida.", color: "bg-nacional-red" },
+             { icon: <CreditCard />, title: "Pagamento facilitado", desc: "Aceitamos Pix, cartão ou dinheiro.", color: "bg-nacional-blue" },
+             { icon: <Headset />, title: "Atendimento pelo WhatsApp", desc: "Fale com nossa equipe para fazer seu pedido.", color: "bg-green-500" },
+             { icon: <ShieldCheck />, title: "Entrega rápida", desc: "Entrega de gás em Ribeirão Pires.", color: "bg-nacional-red" }
           ].map((card, i) => (
             <motion.div
               key={i}
@@ -349,7 +346,7 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-4xl md:text-7xl font-black text-nacional-blue uppercase tracking-tighter leading-none mb-8"
           >
-            REVENDA NACIONAL GÁS <span className="text-nacional-red">EM RIBEIRÃO PIRES</span>
+            <Link to="/sobre-nos">REVENDA NACIONAL GÁS <span className="text-nacional-red">EM RIBEIRÃO PIRES</span></Link>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -447,9 +444,9 @@ export default function Home() {
               SOLUÇÃO COMPLETA EM RIBEIRÃO PIRES
             </div>
             
-            <h2 className="text-4xl md:text-6xl font-black text-nacional-blue mb-6 leading-none uppercase tracking-tighter">
-              ÁGUA MINERAL <span className="text-nacional-red">EM RIBEIRÃO PIRES</span>
-            </h2>
+<h2 className="text-4xl md:text-6xl font-black text-nacional-blue mb-6 leading-none uppercase tracking-tighter">
+               GÁS E ÁGUA MINERAL <span className="text-nacional-red">EM RIBEIRÃO PIRES</span>
+             </h2>
             
             <h3 className="text-2xl md:text-3xl font-bold text-slate-700 mb-8 leading-tight">
               Entrega de água mineral junto com o seu gás de cozinha em Ribeirão Pires
@@ -474,7 +471,7 @@ export default function Home() {
 
             <div className="space-y-6 mb-10 text-left md:text-center">
               <p className="text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto">
-                Por que pedir em dois lugares diferentes se você pode receber tudo de uma vez? Somos a sua distribuidora de confiança em Ribeirão Pires para <strong>Gás de Cozinha (P13)</strong> e <strong>Água Mineral de 20 Litros</strong>.
+                Por que pedir em dois lugares diferentes se você pode receber tudo de uma vez? Somos a sua revenda de confiança em Ribeirão Pires para <strong>Gás de Cozinha (P13)</strong> e <strong>Água Mineral de 20 Litros</strong>.
               </p>
               
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
@@ -500,7 +497,7 @@ export default function Home() {
                 className="bg-green-500 hover:bg-green-600 text-white px-10 py-5 rounded-2xl text-xl font-black flex items-center justify-center gap-4 transition-all shadow-[0_6px_0_rgb(21,128,61)] active:translate-y-1 active:shadow-none w-full sm:w-auto uppercase tracking-tighter"
               >
                 <MessageCircle className="w-7 h-7" />
-                CHAMA NO ZAP AGORA
+                PEDIR PELO WHATSAPP
               </a>
             </div>
           </motion.div>
@@ -537,7 +534,7 @@ export default function Home() {
                 <span className="text-white text-2xl md:text-4xl block mt-4">PELO WHATSAPP</span>
               </h2>
               <p className="text-xl font-bold mb-10 opacity-90 leading-tight">
-                A panela está no fogo e o gás acabou? Não entre em pânico. A Nacional Gás resolve seu problema em minutos com atendimento humano e entrega ultra rápida.
+                A panela está no fogo e o gás acabou? Não entre em pânico. A Nacional Gás resolve seu problema com atendimento humano e entrega rápida.
               </p>
               <a 
                 href={WHATSAPP_LINK}
@@ -554,8 +551,8 @@ export default function Home() {
       <Section>
         <div className="grid md:grid-cols-3 gap-6">
           {[
-            { icon: <Truck className="text-nacional-red" />, title: "Solicite sua entrega", desc: "Em todos os bairros de Ribeirão Pires." },
-            { icon: <ShieldCheck className="text-nacional-blue" />, title: "Atendimento rápido", desc: "Botões novos, revisados e certificados." },
+            { icon: <Motorbike className="text-nacional-red" />, title: "Solicite sua entrega", desc: "Em todos os bairros de Ribeirão Pires." },
+            { icon: <ShieldCheck className="text-nacional-blue" />, title: "Atendimento rápido", desc: "Botijões novos, revisados e certificados." },
             { icon: <CheckCircle2 className="text-green-500" />, title: "Entrega em Ribeirão Pires", desc: "Peso exato garantido pela Nacional Gás." }
           ].map((item, i) => (
             <Card key={i} className="flex flex-col items-center text-center">
@@ -582,11 +579,11 @@ export default function Home() {
               <Droplets className="w-4 h-4" />
               Combo Praticidade
             </div>
-            <h2 className="text-4xl md:text-5xl font-black text-nacional-blue mb-6 leading-tight uppercase italic tracking-tighter">
-              Aproveite que já pediu o gás e peça sua <span className="text-nacional-red">Água Mineral</span> também!
+<h2 className="text-4xl md:text-5xl font-black text-nacional-blue mb-6 leading-tight uppercase italic tracking-tighter">
+              <Link to="/agua-mineral-ribeirao-pires">ÁGUA MINERAL <span className="text-nacional-red">EM RIBEIRÃO PIRES</span></Link>
             </h2>
             <p className="text-xl text-slate-600 mb-8 leading-relaxed font-medium">
-              Trabalhamos com as melhores marcas de água mineral 20L. Higiene garantida e entrega no mesmo caminhão do seu gás.
+              Trabalhamos com marcas de água mineral 20L, com praticidade para você pedir a água junto com o seu gás.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <motion.a 
@@ -677,15 +674,15 @@ export default function Home() {
               />
               <FAQItem 
                 question="Quanto tempo demora a entrega do gás?" 
-                answer="Nossa meta é entregar entre 20 a 40 minutos. Ribeirão Pires é nossa casa, conhecemos cada atalho para chegar rápido até você." 
+                answer="Entrega rápida no seu bairro. Ribeirão Pires é nossa casa, conhecemos cada atalho para chegar até você." 
               />
               <FAQItem 
                 question="Vocês entregam água mineral?" 
-                answer="Sim! Entregamos água mineral de 20 litros junto com o gás de cozinha. Trabalhamos com as melhores marcas do mercado com entrega no mesmo caminhão." 
+                answer="Sim! Entregamos água mineral de 20 litros e você pode pedir junto com o seu gás de cozinha pelo WhatsApp." 
               />
               <FAQItem 
                 question="Como pedir gás pelo WhatsApp?" 
-                answer="É simples: clique no botão de WhatsApp, envie sua mensagem informando o endereço e a quantidade desejada. Em minutos confirmamos e saímos para entrega." 
+                answer="É simples: clique no botão de WhatsApp, envie sua mensagem informando o endereço e a quantidade desejada. Confirmamos seu pedido pelo WhatsApp e saímos para entrega." 
               />
             </div>
           </div>
@@ -707,7 +704,7 @@ export default function Home() {
           
           <div className="w-[80%] mx-auto rounded-[2.5rem] overflow-hidden shadow-2xl border-8 border-slate-100 h-[450px]">
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.887640428587!2d-46.4069444!3d-23.7155556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce150000000000%3A0x0!2zMjPCsDQyJzU2LjAiUyA0NsKwMjQnMjUuMCJX!5e0!3m2!1spt-BR!2sbr!4v1710680000000!5m2!1spt-BR!2sbr" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.887640428587!2d-46.3887274!3d-23.6912293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce150000000000%3A0x0!2zMjPCsDQyJzU2LjAiUyA0NsKwMjQnMjUuMCJX!5e0!3m2!1spt-BR!2sbr!4v1710680000000!5m2!1spt-BR!2sbr" 
               width="100%" 
               height="100%" 
               style={{ border: 0 }} 
